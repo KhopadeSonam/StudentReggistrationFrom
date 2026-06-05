@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body bgcolor="#EAF2F8">
+
+    <center>
+
+        <h1>
+            <font color="#2C3E50">🎓 Student Registration Form</font>
+        </h1>
+
+        <font color="#5D6D7E">
+            Please fill in all the required details carefully.
+        </font>
+
+        <hr width="60%" color="#5D6D7E">
+
+        <form>
+
+        <fieldset style="background-color:#FFFFFF; width:70%;">
+            <legend>
+                <font color="#2980B9">
+                    <b>Personal Information</b>
+                </font>
+            </legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name here..." pattern="^[A-Za-z]{2,25}$">
+            <br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"
+                placeholder="Enter your username here..." >
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                placeholder="Enter your password here..." >
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                placeholder="Enter your email here..." >
+            <br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"
+                placeholder="Enter your mobile number here..." >
+            <br><br>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" name="DOB" >
+            <br><br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset style="width:70%; background-color:#FFFFFF;">
+            <legend>
+                <font color="#27AE60">
+                    <b>Educational Information</b>
+                </font>
+            </legend>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" >
+                <option value="">Select your course</option>
+                <option value="BSc Computer Science">BSc Computer Science</option>
+                <option value="BSc Information Technology">BSc Information Technology</option>
+                <option value="BSc Software Engineering">BSc Software Engineering</option>
+                <option value="BSc Data Science">BSc Data Science</option>
+            </select>
+
+            <br><br>
+
+            <label for="year">Year of Study:</label>
+            <input type="date" id="year" name="year" >
+
+            <br><br>
+
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university"
+                placeholder="Enter your university here..." >
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset style="width:70%; background-color:#FFFFFF;">
+            <legend>
+                <font color="#8E44AD">
+                    <b>Additional Information</b>
+                </font>
+            </legend>
+
+            <label for="skills">Skills:</label>
+
+            <input type="checkbox" id="skill1" name="skills" value="Python">
+            <label for="skill1">Python</label>
+
+            <input type="checkbox" id="skill2" name="skills" value="JavaScript">
+            <label for="skill2">JavaScript</label>
+
+            <input type="checkbox" id="skill3" name="skills" value="Java">
+            <label for="skill3">Java</label>
+
+            <br><br>
+
+            <label>Gender</label>
+
+            <input type="radio" id="male" name="gender" value="Male">Male
+
+            <input type="radio" id="female" name="gender" value="Female">Female
+
+            <br><br>
+
+            <label for="experience">Experience: 0 to 10</label>
+            <input type="range" id="experience" name="experience"
+                min="0" max="10" value="0">
+
+            <br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf">
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset style="width:70%; background-color:#FFFFFF;">
+            <legend>
+                <font color="#D35400">
+                    <b>Contact Information</b>
+                </font>
+            </legend>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"
+                placeholder="Enter your address here..." >
+
+            <br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"
+                placeholder="Enter your city here..." >
+
+            <br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state"
+                placeholder="Enter your state here..." >
+
+            <br><br>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip"
+                placeholder="Enter your zip code here..." >
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset style="width:70%; background-color:#FFFFFF;">
+            <legend>
+                <font color="#C0392B">
+                    <b>Additional Comments</b>
+                </font>
+            </legend>
+
+            <label for="message">Leave a message:</label>
+            <textarea id="message" name="message"
+                placeholder="Enter your message here..." rows="4" cols="50"></textarea>
+
+        </fieldset>
+
+        <br><br>
+
+        <button type="submit">✅ Submit</button>
+        <button type="reset">🔄 Reset</button>
+        </form>
+        <br><br>
+
+        <font color="#7F8C8D">
+            <b>Thank you for completing the registration form.</b>
+        </font>
+
+    </center>
+
+</body>
+</html>
